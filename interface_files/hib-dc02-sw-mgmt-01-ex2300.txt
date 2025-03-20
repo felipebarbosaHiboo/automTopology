@@ -1,0 +1,36 @@
+admfelipeb@hib-dc02-sw-mgmt-01-ex2300> show interfaces descriptions
+Interface       Admin Link Description
+ge-0/0/0        up    up   hib-dc02-node-01 IPMI
+ge-0/0/1        up    up   hib-dc02-node-02 IPMI
+ge-0/0/2        up    up   hib-dc02-node-03 IPMI
+ge-0/0/3        up    up   hib-ip-cam-controller-dc02
+ge-0/0/4        up    up   hib-dc02-ddos-node-01-mgmt-ib
+ge-0/0/5        up    up   hib-feenics-access-controller-server
+ge-0/0/6        up    up   hib-dc02-node-04 IPMI
+ge-0/0/7        up    down unused
+ge-0/0/8        up    up   hib-dc02-sw-dc-01-qfx5110 em0
+ge-0/0/9        up    down unused
+ge-0/0/10       up    up   hib-dc02-fw-01-srx4100 fxp0
+ge-0/0/11       up    up   hib-dc02-DDOS-node-01-oob
+ge-0/0/12       up    up   hib-dc02-rtr-edge-01-acx5448 em0
+ge-0/0/13       up    up   hib-dc02-rtr-edge-02-acx5448 em0
+ge-0/0/14       up    up   hib-dc01-DDOS-scrubber-01-mgmt-ib
+ge-0/0/15       up    down unused
+ge-0/0/16       up    up   hib-dc02-rtr-core-01-mx304-re0 fxp0
+ge-0/0/17       up    up   hib-dc02-rtr-core-01-mx304-re1 fxp0
+ge-0/0/18       up    down unused
+ge-0/0/19       up    down unused
+ge-0/0/20       up    up   hib-dc02-opt-01-fsp3000 1-1-0A C1
+ge-0/0/21       up    up   hib-dc02-alm16-01
+ge-0/0/22       up    up   hib-dc02-cs-01-slc8000 Eth1
+ge-0/0/23       up    up   hib-dc02-lte-01-g520 LAN 1
+xe-0/1/0        up    up   hib-dc02-sw-dc-01-qfx5110 xe-0/0/28
+xe-0/1/1        up    up   hib-dc02-sw-dc-01-qfx5110 xe-0/0/29
+xe-0/1/2        up    up   hib-dc02-rtr-edge-01-acx5448 xe-0/0/46
+xe-0/1/3        up    up   hib-dc02-rtr-edge-02-acx5448 xe-0/0/46
+ae0             up    up   hib-dc02-sw-agg-01-qfx5110
+ae1             up    up   hib-dc02-rtr-edge
+irb.90          up    up   hib-mgmt-ib
+irb.99          up    up   hib-mgmt-oob
+me0             down  down unused
+me0.0           up    down hib-mgmt-oob

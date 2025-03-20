@@ -1,0 +1,98 @@
+Overview
+
+This program is a Flask-based web application that visualizes network topology from parsed interface files. It reads .txt files, extracts network connection details, and generates an interactive network topology visualization using PyVis.
+
+1️⃣ HTML Frontend (index.html)
+
+Explanation:
+
+Defines a webpage for network visualization.
+
+<button> triggers topology generation via Flask API.
+
+<iframe> loads the generated network visualization.
+
+JavaScript (loadTopology) updates the iframe with /generate_topology route.
+
+2️⃣ Flask Backend (app.py)
+
+Explanation:
+
+Imports necessary modules:
+
+flask: Handles web routes (Flask, render_template, send_file).
+
+os: Manages file operations.
+
+re: Handles regular expressions for parsing network files.
+
+xml.etree.ElementTree: Allows XML processing (if needed for Draw.io).
+
+networkx: Graph visualization and data structure.
+
+pyvis: Creates interactive visualizations.
+
+Explanation:
+
+Creates a Flask web app instance.
+
+Defines FOLDER_PATH where network topology .txt files are stored.
+
+3️⃣ NetworkTopology Class
+
+Initialization
+
+Initializes the class with the folder path and an empty NetworkX graph.
+
+Parsing Network Files
+
+Reads lines from the network file.
+
+Extracts the hostname from the file name using regex.
+
+Stores the extracted hostname.
+
+Initializes an empty interfaces list.
+
+Uses regex to match network connections in each line.
+
+Extracts interface name, admin/oper status, remote device, and remote interface.
+
+Filters out unwanted interfaces like irb, lo0, and ps.
+
+Determines if the link is down and stores it.
+
+Building Topology
+
+Iterates through .txt files and parses them.
+
+Adds network connections to the NetworkX graph with red/green color coding.
+
+Generating Interactive Visualization
+
+Creates a PyVis interactive visualization.
+
+Adds nodes with a blue color.
+
+Adds edges with green/red based on status.
+
+Saves the interactive visualization in /static/.
+
+4️⃣ Flask Routes
+
+Serves the index.html web page.
+
+Generates the topology and serves the visualization file.
+
+5️⃣ Running the App
+
+Starts the Flask web server in debug mode.
+
+🎯 Summary
+
+✅ Parses network interface files
+✅ Builds a NetworkX graph
+✅ Generates an interactive PyVis visualization
+✅ Serves it via Flask as a web app
+
+Would you like additional features such as real-time updates or API endpoints? 🚀

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Topology</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        iframe { width: 100%; height: 800px; border: none; }
+        button { padding: 10px 20px; font-size: 16px; margin-top: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Network Topology Visualization</h1>
+    <button onclick="loadTopology()">Generate & Load Topology</button>
+    <iframe id="topologyFrame" src=""></iframe>
+
+    <script>
+        function loadTopology() {
+            document.getElementById('topologyFrame').src = "/generate_topology";
+        }
+    </script>
+</body>
+</html>

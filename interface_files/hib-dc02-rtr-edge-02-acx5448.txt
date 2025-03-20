@@ -1,0 +1,41 @@
+admfelipeb@hib-dc02-rtr-edge-02-acx5448> show interfaces descriptions
+Interface       Admin Link Description
+xe-0/0/0        up    up   customer-000107
+xe-0/0/0.500    up    up   customer-000107-service-0500
+xe-0/0/1        up    up   customer-000108
+xe-0/0/1.500    up    up   customer-000108-service-0500
+xe-0/0/2        up    up   customer-000110
+xe-0/0/2.500    up    up   customer-000110-service-0500
+xe-0/0/3        up    up   customer-000105
+xe-0/0/3.502    up    up   customer-000105-service-0502
+xe-0/0/4        up    up   customer-000112
+xe-0/0/4.500    up    up   customer-000112-service-0500
+xe-0/0/6        up    up   customer-000118
+xe-0/0/6.500    up    up   customer-000118-service-0500
+xe-0/0/44       up    up   hib-dc02-fw-01-srx4100 xe-0/0/7
+xe-0/0/44.94    up    up   hib-acc-cntr-vrf-trns
+xe-0/0/44.96    up    up   hib-vms-nvr-server-vrf-trns
+xe-0/0/44.97    up    up   hib-ups-vrf-trns
+xe-0/0/44.402   up    up   hib-mgmt-trns
+xe-0/0/44.412   up    up   hib-mgmt-cpe-trns
+xe-0/0/44.502   up    up   hib-public-trns
+xe-0/0/46       up    up   hib-dc02-sw-mgmt-01-ex2300 xe-0/1/3
+xe-0/0/47       down  down temporary
+et-0/1/0        up    up   hib-dc02-rtr-core-01-mx304 et-0/0/4
+et-0/1/1        up    up   hib-dc01-rtr-core-01-mx304 et-0/0/5
+et-0/1/2        up    up   hib-dc02-sw-dc-01-qfx5110 et-0/0/51
+ae0             up    up   hib-dc02-sw-mgmt-01-ex2300
+ae0.90          up    up   hib-mgmt-ib-dc02
+ae0.94          up    up   hib-acc-cntr-vpls-dc02
+ae0.95          up    up   hib-ip-cam-vpls-dc02
+ae0.99          up    up   hib-mgmt-oob-dc02
+ae1             up    down hib-dc02-sw-dc-01-qfx5110
+ae1.19          up    down hib-srv-shrd
+em0             up    up   hib-dc02-sw-mgmt-01-ex2300 ge-0/0/13
+em0.0           up    up   hib-mgmt-oob
+irb.90          up    up   hib-mgmt-ib-dc02
+irb.99          up    up   hib-mgmt-oob-dc02
+irb.201         up    up   hib-mgmt-cpe-dc02
+lo0.0           up    up   hib-underlay
+lo0.1           up    up   hib-mgmt
+lo0.2           up    up   hib-public

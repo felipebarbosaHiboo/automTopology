@@ -1,0 +1,48 @@
+admfelipeb@hib-dc01-rtr-core-01-mx304> show interfaces descriptions
+Interface       Admin Link Description
+et-0/0/0        up    up   hib-dc01-rtr-edge-01-acx5448 et-0/1/0
+gr-0/0/0.0      up    up   hib-public-dynamic-inet
+gr-0/0/0.1      up    up   hib-public-dynamic-inet6
+gr-0/0/0.11     up    up   hib-dc01-DDOS-NTD-01
+gr-0/0/0.12     up    up   hib-dc02-DDOS-NTD-01
+et-0/0/1        up    up   hib-dc02-rtr-edge-01-acx5448 et-0/1/1
+et-0/0/2        up    down hib-pop01-rtr-edge-01-acx5448 et-0/1/0
+et-0/0/4        up    up   hib-dc01-rtr-edge-02-acx5448 et-0/1/0
+et-0/0/5        up    up   hib-dc02-rtr-edge-02-acx5448 et-0/1/1
+et-0/0/6        up    down hib-pop01-rtr-edge-02-acx5448 et-0/1/0
+et-0/0/11       up    up   hib-dc01-DDOS-scrubber-01 et-1/1
+et-0/0/11.421   up    up   hib-dc01-DDOS-scrubber-01-dirty
+et-0/0/11.422   up    up   hib-dc01-DDOS-scrubber-01-clean
+et-0/0/15       up    up   hib-dc01-sw-trns-01-qfx5110 et-0/0/50
+et-0/0/15.90    up    up   hib-mgmt-ib
+et-0/0/15.99    up    up   hib-mgmt-oob
+et-0/0/15.511   up    up   Zayo
+fxp0            up    up   hib-dc01-sw-mgmt-01-ex2300 ge-0/0/16
+fxp0.0          up    up   hib-mgmt-oob-dc01
+irb.1194        up    up   hib-acc-cntr-dc01
+irb.1195        up    up   hib-ip-cam-dc01
+irb.1196        up    up   hib-vms-nvr-server-dc01
+irb.1197        up    up   hib-ups-dc01
+irb.1294        up    up   hib-acc-cntr-dc02
+irb.1295        up    up   hib-ip-cam-dc02
+lo0.0           up    up   hib-underlay
+lo0.1           up    up   hib-mgmt
+lo0.2           up    up   hib-public
+ps0             up    up   hib-dc01-rtr-edge-01-acx5448 dc01
+ps1             up    up   hib-dc01-rtr-edge-01-acx5448 dc02
+ps2             up    up   hib-dc01-rtr-edge-02-acx5448 dc01
+ps3             up    up   hib-dc01-rtr-edge-02-acx5448 dc02
+ps4             up    up   hib-dc02-rtr-edge-01-acx5448 dc01
+ps5             up    up   hib-dc02-rtr-edge-01-acx5448 dc02
+ps6             up    up   hib-dc02-rtr-edge-02-acx5448 dc01
+ps7             up    up   hib-dc02-rtr-edge-02-acx5448 dc02
+ps8             up    up   hib-pop01-rtr-edge-01-acx5448 dc01
+ps9             up    up   hib-pop01-rtr-edge-01-acx5448 dc02
+ps10            up    up   hib-pop01-rtr-edge-02-acx5448 dc01
+ps11            up    up   hib-pop01-rtr-edge-02-acx5448 dc02
+ps10002.500     up    up   customer-000101-service-0500
+ps10005.500     up    up   customer-000102-service-0500
+ps10007.500     up    up   customer-000107-service-0500
+ps10008.500     up    down customer-000108-service-0500
+ps10009.500     up    down customer-000110-service-0500
+ps2544.500      up    up   service-hib-public-rfc2544-dc01

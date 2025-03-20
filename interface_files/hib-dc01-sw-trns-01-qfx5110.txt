@@ -1,0 +1,9 @@
+admfelipeb@hib-dc01-sw-trns-01-qfx5110> show interfaces descriptions
+Interface       Admin Link Description
+xe-0/0/47       up    up   Zayo 10G Patch Panel X Port Y
+xe-0/0/47.0     up    up   Zayo
+et-0/0/50       up    up   hib-dc01-rtr-core-01-mx304 et-0/0/15
+et-0/0/50.0     up    up   DC01 Slater
+em0             down  down unused
+em0.0           down  down hib-mgmt-oob
+irb.90          up    up   hib-mgmt-ib

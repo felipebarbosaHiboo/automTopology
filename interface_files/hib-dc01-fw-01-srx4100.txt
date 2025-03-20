@@ -1,0 +1,37 @@
+admfelipeb@hib-dc01-fw-01-srx4100> show interfaces descriptions
+Interface       Admin Link Description
+xe-0/0/0        up    up   hib-dc01-sw-agg-01-qfx5110 xe-0/0/44
+xe-0/0/1        up    up   hib-dc01-sw-agg-01-qfx5110 xe-0/0/45
+xe-0/0/6        up    up   hib-dc01-rtr-edge-01-acx5448 xe-0/0/44
+xe-0/0/6.94     up    up   hib-acc-cntr-vrf-trns
+xe-0/0/6.96     up    up   hib-vms-nvr-server-vrf-trns
+xe-0/0/6.97     up    up   hib-ups-vrf-trns
+xe-0/0/6.401    up    up   hib-trns-fw-mgmt-1
+xe-0/0/6.411    up    up   hib-trns-fw-mgmt-cpe-1
+xe-0/0/6.501    up    up   hib-trns-fw-public-1
+xe-0/0/7        up    up   hib-dc01-rtr-edge-02-acx5448 xe-0/0/44
+xe-0/0/7.94     up    up   hib-acc-cntr-vrf-trns
+xe-0/0/7.96     up    up   hib-vms-nvr-server-vrf-trns
+xe-0/0/7.97     up    up   hib-ups-vrf-trns
+xe-0/0/7.402    up    up   hib-trns-fw-mgmt-2
+xe-0/0/7.412    up    up   hib-trns-fw-mgmt-cpe-2
+xe-0/0/7.502    up    up   hib-trns-fw-public-2
+ae0             up    up   hib-dc01-sw-agg-01-qfx5110
+ae0.10          up    up   hib-dc01-srv-int
+ae0.11          up    up   hib-dc01-srv-int-nms
+ae0.12          up    up   hib-dc01-jsi-int-comm
+ae0.19          up    up   hib-srv-shrd
+ae0.20          up    up   hib-dc01-srv-pub
+ae0.22          up    up   hib-dc01-ddos-cms-sampler
+ae0.23          up    up   hib-dc01-ddos-bgp
+ae0.40          up    up   hib-dc01-siem
+ae0.98          up    up   hib-dc01-ddos-mgmt
+ae0.210         up    up   hib-dc01-srv-dmz-cust-test
+ae0.211         up    up   hib-dc01-jsi-ext-comm
+ae0.212         up    up   hib-dc01-ookla-mgmt
+ae0.213         up    up   lab-mgmt-net-hib-dc01-v4
+ae0.214         up    up   lab-svr-hib-dc01-v4
+ae0.999         up    up   hib-dc01-vpn-termination
+fxp0            up    up   hib-dc01-sw-mgmt-01-ex2300 ge-0/0/10
+fxp0.0          up    up   hib-mgmt-oob
+lo0.0           up    up   hib-dc01-fw-01-srx4100

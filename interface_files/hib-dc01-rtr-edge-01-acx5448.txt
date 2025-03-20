@@ -1,0 +1,48 @@
+admfelipeb@hib-dc01-rtr-edge-01-acx5448> show interfaces descriptions
+Interface       Admin Link Description
+xe-0/0/0        up    up   customer-000102
+xe-0/0/0.500    up    up   customer-000102-service-0500
+xe-0/0/2        up    up   customer-000106
+xe-0/0/2.500    up    up   customer-000106-service-0500
+xe-0/0/4        up    up   customer-000105
+xe-0/0/4.501    up    up   customer-000105-service-0501
+xe-0/0/8        up    up   customer-000104
+xe-0/0/8.100    up    up   customer-000104-service-0100
+xe-0/0/8.101    up    up   customer-000104-service-0101
+xe-0/0/8.102    up    up   customer-000104-service-0102
+xe-0/0/8.103    up    up   customer-000104-service-0103
+xe-0/0/9        up    up   customer-000109
+xe-0/0/9.500    up    up   customer-000109-service-0500
+xe-0/0/10       up    down customer-000117
+xe-0/0/10.500   up    down customer-000117-service-0500
+xe-0/0/42       up    up   service-rfc2544
+xe-0/0/42.500   up    up   service-rfc2544
+xe-0/0/44       up    up   hib-dc01-fw-01-srx4100 xe-0/0/6
+xe-0/0/44.94    up    up   hib-acc-cntr-vrf-trns
+xe-0/0/44.96    up    up   hib-vms-nvr-server-vrf-trns
+xe-0/0/44.97    up    up   hib-ups-vrf-trns
+xe-0/0/44.401   up    up   hib-mgmt-trns
+xe-0/0/44.411   up    up   hib-mgmt-cpe-trns
+xe-0/0/44.501   up    up   hib-public-trns
+xe-0/0/46       up    up   hib-dc01-sw-mgmt-01-ex2300 xe-0/1/2
+xe-0/0/47       down  down temporary
+et-0/1/0        up    up   hib-dc01-rtr-core-01-mx304 et-0/0/0
+et-0/1/1        up    up   hib-dc02-rtr-core-01-mx304 et-0/0/1
+et-0/1/2        up    up   hib-dc01-sw-dc-01-qfx5110 et-0/0/50
+ae0             up    up   hib-dc01-sw-mgmt-01-ex2300
+ae0.90          up    up   hib-mgmt-ib-dc01
+ae0.94          up    up   hib-acc-cntr-vpls-dc01
+ae0.95          up    up   hib-ip-cam-vpls-dc01
+ae0.96          up    up   hib-vms-nvr-server-vpls-dc01
+ae0.97          up    up   hib-ups-vpls-dc01
+ae0.99          up    up   hib-mgmt-oob-dc01
+ae1             up    up   hib-dc01-sw-dc-01-qfx5110
+ae1.19          up    up   hib-srv-shrd
+em0             up    up   hib-dc01-sw-mgmt-01-ex2300 ge-0/0/12
+em0.0           up    up   hib-mgmt-oob
+irb.90          up    up   hib-mgmt-ib-dc01
+irb.99          up    up   hib-mgmt-oob-dc01
+irb.201         up    up   hib-mgmt-cpe-dc01
+lo0.0           up    up   hib-underlay
+lo0.1           up    up   hib-mgmt
+lo0.2           up    up   hib-public

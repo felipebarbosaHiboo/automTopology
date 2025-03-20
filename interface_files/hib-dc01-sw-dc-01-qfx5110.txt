@@ -1,0 +1,37 @@
+admfelipeb@hib-dc01-sw-dc-01-qfx5110> show interfaces descriptions
+Interface       Admin Link Description
+xe-0/0/22       up    up   hib-dc01-DDOS-node-01 port 1
+xe-0/0/23       up    up   hib-dc01-DDOS-node-01 port 2
+ge-0/0/24       up    up   hib-dc01-ookla-svr-01-port-1
+ge-0/0/25       up    up   DC01-JSI-INTERNAL-COMMS-INTERFACE
+ge-0/0/26       up    up   DC01-JSI-EXTERNAL-COMMS-INTERFACE
+ge-0/0/27       up    up   DC01-TEST-CUST-PUBLIC-INTERNET-SERVICE
+xe-0/0/28       up    up   hib-dc01-sw-mgmt-01-ex2300 xe-0/1/0
+xe-0/0/29       up    up   hib-dc01-sw-mgmt-01-ex2300 xe-0/1/1
+xe-0/0/32       up    up   hib-dc01-node-01 eth2
+xe-0/0/33       up    up   hib-dc01-node-01 eth3
+xe-0/0/34       up    up   hib-dc01-node-02 eth2
+xe-0/0/35       up    up   hib-dc01-node-02 eth3
+xe-0/0/36       up    up   hib-dc01-node-03 eth2
+xe-0/0/37       up    up   hib-dc01-node-03 eth3
+xe-0/0/38       up    down hib-dc01-node-04 eth2
+xe-0/0/39       up    down hib-dc01-node-04 eth3
+xe-0/0/40       up    up   lab-hib-dc01-sw-mgmt-01-ex2300 port xe-0/0/0
+xe-0/0/41                  lab-hib-dc01-sw-mgmt-01-ex2300 port xe-0/0/1
+ge-0/0/42       up    up   lab-hib-dc01-fw-01-srx345
+xe-0/0/44       up    up   hib-dc01-fw-01-srx4100 xe-0/0/0
+xe-0/0/45       up    up   hib-dc01-fw-01-srx4100 xe-0/0/1
+ge-0/0/46                  hib-dc01-rtr-edge-xx-acx5448 test-customer
+et-0/0/50       up    up   hib-dc01-rtr-edge-01-acx5448 et-0/1/2
+et-0/0/51       up    up   hib-dc01-rtr-edge-02-acx5448 et-0/1/2
+ae0             up    up   hib-dc01-rtr-edge
+ae1             up    up   hib-dc01-fw-01-srx4100
+ae2             up    up   hib-dc01-sw-mgmt-01-ex2300
+ae3             up    up   hib-dc01-node-01
+ae4             up    up   hib-dc01-node-02
+ae5             up    up   hib-dc01-node-03
+ae6             up    down hib-dc01-node-04
+ae7             up    up   lab-hib-dc01-sw-mgmt-01-ex2300
+em0             up    up   hib-dc01-sw-mgmt-01-ex2300 ge-0/0/8
+em0.0           up    up   hib-mgmt-oob
+irb.90          up    up   hib-mgmt-ib
