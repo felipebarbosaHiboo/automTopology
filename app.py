@@ -7,8 +7,11 @@ from firewall import (
     parse_firewall_config,
     check_firewall_rules_with_masks,
 )
-# NEW import
-from backup_config import backup_configs_for_all_devices
+
+# Import the new backup function
+
+from backup_configs import backup_config_via_napalm, backup_configs
+from jump_backup import backup_with_jumphost
 
 app = Flask(__name__)
 
@@ -101,16 +104,52 @@ def check_firewall():
 
     return "".join(html)
 
-# NEW route for backup:
-@app.route("/backup_configs")
-def backup_configs():
+@app.route("/backup_device", methods=["GET", "POST"])
+def backup_device():
+    if request.method == "POST":
+        device_ip = request.form.get("device_ip", "")
+        device_os = request.form.get("device_os", "junos")  # or junos, etc.
+        use_socks5 = bool(request.form.get("use_socks5", False))
+
+        # Do the backup
+        try:
+            backup_path = backup_config_via_napalm(
+                device_ip=device_ip,
+                device_os=device_os,
+                use_socks5=use_socks5
+            )
+            message = f"Successfully backed up config for {device_ip}! Stored at {backup_path}"
+        except Exception as e:
+            message = f"ERROR: {str(e)}"
+
+        return render_template("backup_result.html", message=message)
+    else:
+        return render_template("backup_form.html")
+
+@app.route("/backup_configs", methods=["GET"])
+def backup_configs_route():
     """
-    Route that triggers device backup logic.
-    For now, it just logs in (via napalm) and returns a snippet of config or error.
+    Calls the backup_configs() function from backup_configs.py
+    and displays the results in backup_configs.html.
     """
-    result = backup_configs_for_all_devices()
-    # We'll return the result as plain text or HTML
-    return f"<h3>Backup Results</h3><pre>{result}</pre>"
+    results = backup_configs()
+    return render_template("backup_configs.html", results=results)
+
+@app.route("/jumphost_backup", methods=["GET", "POST"])
+def jumphost_backup():
+    logs = []  # collect step-by-step messages here
+
+    if request.method == "POST":
+        device_ip = request.form.get("device_ip", "").strip()
+        if not device_ip:
+            logs.append("Please enter a device IP!")
+        else:
+            # Call the function that sets up the tunnel, uses NAPALM, etc.
+            backup_with_jumphost(device_ip, logs)
+
+    # Whether GET or POST, render the same template, passing logs.
+    return render_template("jumphost_backup.html", logs=logs)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf7b1fc-5512-4f1d-88a8-74dfac79035d" name="Changes" comment="working">
+    <list default="true" id="caf7b1fc-5512-4f1d-88a8-74dfac79035d" name="Changes" comment="before napalm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface_files/hib-dc01-sw-mgmt-01-ex2300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/interface_files/hib-dc01-sw-mgmt-01-ex2300.ttxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface_files/hib-dc02-sw-mgmt-01-ex2300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/interface_files/hib-dc02-sw-mgmt-01-ex2300.ttxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/network_topology.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/network_topology.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="flask_1_feature-topology-customer" />
+        <entry key="$PROJECT_DIR$" value="flask" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,20 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.customer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hostname_extraction.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;flask&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.app.executor": "Run",
+    "Python.customer.executor": "Run",
+    "Python.hostname_extraction.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "napalm__feature-backup-config"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\felipebarbosa\PycharmProjects\autoTopology" />
       <recent name="C:\Users\felipebarbosa\PycharmProjects\autoTopology\firewall_files" />
       <recent name="C:\Users\felipebarbosa\PycharmProjects\autoTopology\tests" />
       <recent name="C:\Users\felipebarbosa\PycharmProjects\autoTopology\templates" />
@@ -139,12 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1742511387052</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="before napalm">
+      <option name="closed" value="true" />
+      <created>1742787566428</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742787566429</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="working" />
-    <option name="LAST_COMMIT_MESSAGE" value="working" />
+    <MESSAGE value="before napalm" />
+    <option name="LAST_COMMIT_MESSAGE" value="before napalm" />
   </component>
 </project>
